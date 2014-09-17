@@ -1,4 +1,3 @@
-jarryzhangblog
+JarryZhang's blog
 ==============
 
-my blog
