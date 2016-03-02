@@ -22,7 +22,7 @@ fi
 echo "File has been found!"
 
 head -n 30 $TMPLTFILE > $HTMLFILE
-markdown $MDFILE >> $HTMLFILE
+markdown $MDFILE | sed 's/^/      /' >> $HTMLFILE
 tail -n 13 $TMPLTFILE >> $HTMLFILE
 
 FINDLINE="InsertLink"
