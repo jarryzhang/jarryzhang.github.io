@@ -35,7 +35,7 @@ markdown $MDFILE | sed 's/^/      /' >> $HTMLFILE
 tail -n 13 $TMPLTFILE >> $HTMLFILE
 
 FINDLINE="InsertLink"
-sed '/'$FINDLINE'/i \    <li><a href=\"/articles/'${1}'.html\">'$2'</a></li>' $IDXFILE > $TMPFILE
+sed '/'$FINDLINE'/i \    <li><a href=\"/articles/'${1}'.html\">'"$TITLE"'</a></li>' $IDXFILE > $TMPFILE
 mv -f $IDXFILE ${IDXFILE}.pre
 cp -f $TMPFILE $IDXFILE 
 
