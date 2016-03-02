@@ -1,11 +1,20 @@
 #!/bin/bash
 
-if [ $# -ne 2 ]; then
+if [ $# -ne 1 ]; then
 	echo "Wrong input!!!"
-	echo "the first input is file name"
-	echo "the second input is article name"
+	echo "The only input is file name"
 	exit 0
 fi
+
+read -p "Please input the title:" TITLE
+read -p "Are you sure the title is '$TITLE'? " CHOICE
+
+if [ $CHOICE != "y" ]; then
+    echo "Please restart the script!"
+    exit 0
+fi
+
+echo -e "The title is\n$TITLE"
 
 FOLDER=./articles/
 MDFILE=${FOLDER}${1}.md
