@@ -1,16 +1,19 @@
 # Markdown 使用技巧 #
-# 一级标题
-## 二级标题
+###标题
+\# 一级标题
+\## 二级标题
+\### 三级标题
+
+###正文
 正文就随便写写  
 <!--此处是注释-->
-edited by [mahua](http://mahua.jser.me/)
 
-### 回车
+####回车
 如果编辑的时候只回车
 右侧是不会显示回车的  
 所以要加“空格+空格+回车”
 
-### 强调
+####强调
 加下划线或星号都有强调  
 前后各一个是*斜体*  
 前后各两个是**加粗**  
@@ -53,9 +56,10 @@ e.g.
 
 ### code
 ```c
-printf("hello world!")
-
+printf("hello world!");
 ```
+    printf("four spaces before the code");
+
 ### 引用  
 > this is quotes  
 > quote block
@@ -65,6 +69,10 @@ printf("hello world!")
 ***
 三个-或者*
 
-### How to
-转义字符
-自动编号
+### 编辑器
++ [mahua](http://mahua.jser.me/)
++ MarkdownPad2 for Windows
+
+### Todo
+github pages 对google chart的公式不支持，搭梯子看一下是不是因为墙
+画表格比较繁琐

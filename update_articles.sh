@@ -3,8 +3,9 @@
 FOLDER=./articles/
 HTMLFILE=${FOLDER}${1}.html
 MDFILE=${FOLDER}${1}.md
+TMPLTFILE=template.html
 
-if [ ! -f "$HTMLFILE" ]; then
+if [ ! -f "$MDFILE" ]; then
 	echo "File does not exist!!!"
 	exit 0
 fi
