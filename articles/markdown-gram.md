@@ -22,7 +22,7 @@
 **方法1：利用google chart 的服务器**  
 \<p>\<img src="http://chart.googleapis.com/chart?cht=tx&chl= insert the formula here" style="border:none;">\</p>  
 e.g.  
-<p><img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="border:none;"></p>
+<p><img src="http://chart.googleapis.com/chart?cht=tx&chl= \Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="border:none;"></p>
 
 但是要用LaTeX来写公式  
   
