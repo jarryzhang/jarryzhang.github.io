@@ -13,7 +13,7 @@ fi
 echo "File has been found!"
 
 head -n 30 $TMPLTFILE > $HTMLFILE
-markdown $MDFILE | sed 's/^/      /' >> $HTMLFILE
+markdown2 $MDFILE | sed 's/^/      /' >> $HTMLFILE
 tail -n 13 $TMPLTFILE >> $HTMLFILE
 
 echo "Update article successfully!"
