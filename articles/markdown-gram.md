@@ -18,6 +18,8 @@
 前后各一个是*斜体*  
 前后各两个是**加粗**  
 
+比较少用到的~~删除线~~前后两个波浪线
+
 ### 插入公式 ###
 **方法1：利用google chart 的服务器**  
 \<p>\<img src="http://chart.googleapis.com/chart?cht=tx&chl= insert the formula here" style="border:none;">\</p>  
@@ -56,7 +58,9 @@ e.g.
 ```c
 printf("hello world!");
 ```
-
+```
+echo "hello world!"
+```
 ### 引用  
 > this is quotes  
 > quote block
@@ -67,9 +71,10 @@ printf("hello world!");
 三个-或者*
 
 ### 编辑器
-+ [mahua](http://mahua.jser.me/)
-+ MarkdownPad2 for Windows
++ Web [mahua](http://mahua.jser.me/)
++ Windows MarkdownPad2 for Windows
++ Linux Vim + markdown2
++ OS X Mou
 
 ### Todo
-github pages 对google chart的公式不支持，搭梯子看一下是不是因为墙
 画表格比较繁琐

@@ -17,3 +17,6 @@ markdown2 $MDFILE | sed 's/^/      /' >> $HTMLFILE
 tail -n 13 $TMPLTFILE >> $HTMLFILE
 
 echo "Update article successfully!"
+
+git add $HTMLFILE
+git add $MDFILE
