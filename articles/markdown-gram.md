@@ -20,18 +20,14 @@
 
 ### 插入公式 ###
 **方法1：利用google chart 的服务器**  
-```
 <p><img src="http://chart.googleapis.com/chart?cht=tx&chl= insert the formula here" style="border:none;"></p>  
-```
 e.g.  
 <p><img src="http://chart.googleapis.com/chart?cht=tx&chl= \Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="border:none;"></p>
 
 但是要用LaTeX来写公式  
   
 **方法2：利用forkosh服务器**  
-```
 <p><img src="http://www.forkosh.com/mathtex.cgi? insert the formula here"></p>  
-```
 e.g.  
 <img src="http://www.forkosh.com/mathtex.cgi? \Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}">   
 个人觉得google chart的公式好看一些
@@ -50,11 +46,13 @@ e.g.
 1. AAA
 
 ### 链接
-[google.com的超链接](www.google,com)
+方括号文字+小括号链接
+[google.com的超链接](https://www.google.com)
 
 ### 图片
 <!--![github}](http://clever-cloud.com/assets/img/github-icon.svg "github")-->
 <img src="http://clever-cloud.com/assets/img/github-icon.svg" width = "100"/>
+<img src="images/favicon.ico" width = "100"/>
 
 ### code
 ```
@@ -63,15 +61,16 @@ printf("hello world!");
 ```
 echo "hello world!"
 ```
-### 引用  
-> this is quotes  
-> quote block
-  
-
 ### 分割线
 ---
 ***
 三个-或者*
+
+
+### 引用  
+> this is quotes  
+> quote block
+  
 
 ### 编辑器
 + Web: [mahua](http://mahua.jser.me/)
