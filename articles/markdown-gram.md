@@ -18,18 +18,16 @@
 前后各一个是*斜体*  
 前后各两个是**加粗**  
 
-比较少用到的~~删除线~~前后两个波浪线
-
 ### 插入公式 ###
 **方法1：利用google chart 的服务器**  
-\<p>\<img src="http://chart.googleapis.com/chart?cht=tx&chl= insert the formula here" style="border:none;">\</p>  
+<p><img src="http://chart.googleapis.com/chart?cht=tx&chl= insert the formula here" style="border:none;"></p>  
 e.g.  
 <p><img src="http://chart.googleapis.com/chart?cht=tx&chl= \Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="border:none;"></p>
 
 但是要用LaTeX来写公式  
   
 **方法2：利用forkosh服务器**  
-\<p>\<img src="http://www.forkosh.com/mathtex.cgi? insert the formula here">\</p>  
+<p><img src="http://www.forkosh.com/mathtex.cgi? insert the formula here"></p>  
 e.g.  
 <img src="http://www.forkosh.com/mathtex.cgi? \Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}">   
 个人觉得google chart的公式好看一些
@@ -55,26 +53,25 @@ e.g.
 <img src="http://clever-cloud.com/assets/img/github-icon.svg" width = "100"/>
 
 ### code
-```c
-printf("hello world!");
 ```
+printf("hello world!");
+```  
 ```
 echo "hello world!"
 ```
 ### 引用  
 > this is quotes  
 > quote block
-
 ### 分割线
 ---
 ***
 三个-或者*
 
 ### 编辑器
-+ Web [mahua](http://mahua.jser.me/)
-+ Windows MarkdownPad2 for Windows
-+ Linux Vim + markdown2
-+ OS X Mou
++ Web: [mahua](http://mahua.jser.me/)
++ Windows: MarkdownPad2
++ Linux: Vim + markdown2
++ OS X: Mou
 
 ### Todo
 画表格比较繁琐
