@@ -6,15 +6,17 @@ if [ $# -ne 1 ]; then
 	exit 0
 fi
 
-read -p "Please input the title:" TITLE
-read -p "Are you sure the title is '$TITLE'? " CHOICE
+# insert title by input 
+#read -p "Please input the title:" TITLE
+#read -p "Are you sure the title is '$TITLE'? " CHOICE
+#
+#if [ $CHOICE != "y" ]; then
+#    echo "Please restart the script!"
+#    exit 0
+#fi
+#
+#echo -e "The title is\n$TITLE"
 
-if [ $CHOICE != "y" ]; then
-    echo "Please restart the script!"
-    exit 0
-fi
-
-echo -e "The title is\n$TITLE"
 
 FOLDER=./articles/
 MDFILE=${FOLDER}${1}.md
@@ -29,6 +31,10 @@ if [ ! -f "$MDFILE" ]; then
 fi
 
 echo "File has been found!"
+
+# extract title
+TITLE=`head -n 1 ${MDFILE} | sed 's/#//g'`
+echo -e "The title is\n$TITLE"
 
 head -n 30 $TMPLTFILE > $HTMLFILE
 markdown $MDFILE | sed 's/^/      /' >> $HTMLFILE
